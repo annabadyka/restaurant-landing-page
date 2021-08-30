@@ -68,7 +68,7 @@ function filterMenuItems(num_cat){
     if(num_cat!='all'){
        resultado = menu_items.filter(item =>item.nid_cat==num_cat);
     }
-
+    fadeOut(document.getElementById('data-menu'));
     document.getElementById('data-menu').innerHTML='';
         for(let i=0; i<resultado.length; i++){
             document.getElementById('data-menu').innerHTML+='<div class="p-3 col-sm-12 col-md-6 col-lg-4">'+
@@ -89,7 +89,8 @@ function filterMenuItems(num_cat){
                   '</div>'+
                 '</div>'+
               '</div>';
-        }    
+        }
+    fadeIn(document.getElementById('data-menu'));
 }
 
 function getStars(item_stars){
