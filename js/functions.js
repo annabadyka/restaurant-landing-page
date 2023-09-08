@@ -74,7 +74,7 @@ function filterMenuItems(num_cat){
             document.getElementById('data-menu').innerHTML+='<div class="p-3 col-sm-12 col-md-6 col-lg-4">'+
                 '<div class="card m-0 p-0 shadow josh-js" data-josh-anim-name="fadeInUp">'+
                   '<img src="'+resultado[i].img_portada+'" class="card-img-top img-fluid" alt="'+resultado[i].titulo+'">'+
-                  '<div class="card-body">'+
+                  '<div class="card-body-1">'+
                    '<div class="row font-bold">'+
                        '<div class="col-md-6 my-1 text-start">'+resultado[i].titulo+'</div>'+
                        '<div class="col-md-6 my-1 color2 text-md-start text-lg-end">'+resultado[i].price+'</div>'+
